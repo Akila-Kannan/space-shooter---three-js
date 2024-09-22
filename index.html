@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Space Shooter</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+   
+        #overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            z-index: 10;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #score
+        {
+          position: absolute;
+            top: 10%;
+            right: 10%;
+            color: white;
+            z-index: 12;
+        }
+  </style>
+
+</head>
+<body>
+  <div id="overlay">
+    <div id="text"> Game Over!</div>
+    <button id="restart">Restart</button>
+</div>
+<div id="score">
+  Score :0
+</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
